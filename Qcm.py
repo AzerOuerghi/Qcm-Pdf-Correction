@@ -35,7 +35,7 @@ for cnt in contours:
          img = cv2.drawContours(img, [cnt], -1, (0, 255, 255), 3)
          cv2.putText(img, 'Square', (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 0), 2)
       else:
-         cv2.putText(img, 'Rectangle', (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+         cv2.putText(img, 'Rectangle', (x1, y1), cv2.FONT   _HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
          img = cv2.drawContours(img, [cnt], -1, (0, 255, 0), 3)
 
 cv2.imshow("Shapes", img)
